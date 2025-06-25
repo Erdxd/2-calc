@@ -38,7 +38,7 @@ func main() {
 			avg1 += float64(index)
 
 		}
-		fmt.Println("среднее значение =", avg/avg1)
+		fmt.Println("среднее значение =", avg/(avg1))
 
 	} else if a == "sum" {
 		sum := 0.0
@@ -52,7 +52,7 @@ func main() {
 		sort.Float64s(transaction)
 		fmt.Println(transaction)
 
-		if len(transaction)%2 == 0 { // кол-во чисел четное
+		if len(transaction)%2 == 0 { // Кол-во чисел четное
 			midle2 := 0
 			midle3 := 0
 			midle2 = len(transaction) / 2
@@ -73,5 +73,6 @@ func main() {
 		fmt.Println(error)
 
 	}
+	//time.Sleep(time.Minute)
 
 }
